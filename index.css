@@ -1,0 +1,629 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1400px !important;
+}
+body {
+  width: 100% !important;
+}
+
+/* NAV SECTION */
+.form-control {
+  width: 800px !important;
+  border-radius: 20px;
+}
+
+/* HERO SECTION */
+
+#hero {
+  background-color: #fdcd0b;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.title h3 {
+  color: white;
+  font-size: 50px;
+}
+.title h1 {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+/* SHOPPING CARDS */
+.container-shopping {
+  width: 100% !important;
+}
+/* .right {
+  display: inline !important;
+} */
+span {
+  content: "\2B50";
+}
+.card-body {
+  padding: 20px !important;
+  margin: 0 !important;
+  position: none;
+}
+.col-6 {
+  padding: 0 0 0 0 !important;
+}
+ul {
+  padding-inline-start: 0px !important;
+  /* list-style-type: none; */
+}
+
+.card {
+  word-wrap: normal !important;
+  padding: 30px !important;
+  border-radius: 20px;
+  transition: 0.3s all ease-in-out;
+}
+.card:hover {
+  box-shadow: 2px 2px 15px #fd9a6ce5;
+  transform: scale(1.02);
+}
+.icons span {
+  margin-top: 10px;
+}
+.review-span {
+  color: orange !important;
+  font-weight: bolder;
+}
+.card-body {
+  font-size: 15px;
+  font-weight: bolder;
+}
+.stronger h2 {
+  font-size: 30px !important;
+  font-weight: bolder;
+}
+.title h5 {
+  font-weight: bolder;
+}
+
+/* ACCORDION */
+.middle {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #c6aee7;
+}
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: black;
+}
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.slider > .thumb.left {
+  left: 25%;
+  transform: translate(-10px, 0px);
+}
+.slider > .thumb.right {
+  right: 25%;
+  transform: translate(10px, 0px);
+}
+
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+input[type="checkbox"],
+label {
+  border: none;
+  font-size: 20px;
+  font-weight: 800 !important;
+  /* text-align: start; */
+  color: blue;
+
+  padding: 10px;
+}
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  /* top: 0;
+  left: 0; */
+  background-color: #e9e9e9;
+}
+input[type="checkbox"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color: #1e80ef;
+}
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  left: 8px;
+}
+
+.Accordion-Header {
+  background-color: blue;
+  color: white;
+  font-weight: 800 !important;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+}
+
+input[type="button"] {
+  background-color: white;
+  color: blue;
+
+  border-radius: 10px;
+  padding: 10px;
+  border: 0.5px solid blue;
+}
+input[type="button"]:hover {
+  background-color: blue;
+  color: white;
+
+  border-radius: 10px;
+  border: 0.5px solid white;
+}
+.accordion {
+  border: 0.5px solid gray !important;
+  border-radius: 10px;
+}
+
+/* color-black
+  color-red
+  color-blue
+  color-green
+  color-yellow
+  color-orange
+  color-gray
+  color-white */
+
+input[type="checkbox"][id="color-black"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+input[type="checkbox"][id="color-black"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-black"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+input[type="checkbox"][id="color-red"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
+input[type="checkbox"][id="color-red"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-red"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+input[type="checkbox"][id="color-blue"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: blue;
+}
+input[type="checkbox"][id="color-blue"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-blue"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+input[type="checkbox"][id="color-green"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: green;
+}
+input[type="checkbox"][id="color-green"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-green"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+
+input[type="checkbox"][id="color-yellow"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+}
+input[type="checkbox"][id="color-yellow"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-yellow"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+input[type="checkbox"][id="color-orange"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: orange;
+}
+input[type="checkbox"][id="color-orange"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-orange"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+input[type="checkbox"][id="color-gray"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-color: gray;
+}
+input[type="checkbox"][id="color-gray"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-gray"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+input[type="checkbox"][id="color-white"]:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  border: 0.5px solid gray;
+  background-color: white;
+}
+input[type="checkbox"][id="color-white"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+input[type="checkbox"][id="color-white"]:checked:after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 12px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+footer {
+  padding-bottom: 0 !important;
+  border-top: 1px solid grey;
+  width: 100%;
+}
+.brands {
+  background-color: blue;
+  border-radius: 0 10px 0 0;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px !important;
+  display: flex;
+
+  z-index: 1 !important;
+  color: white;
+}
+
+/*********************************************************************/
+/* Bootstrap 4 Multiple Item Carousel */
+/*********************************************************************/
+/* medium - display 2  */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+}
+
+/* large - display 3 */
+@media (min-width: 992px) {
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33%);
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33%);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px !important;
+  height: 10px !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  margin: 10px;
+}
+.carousel-item {
+  margin-left: 20px;
+}
+.carousel-inner {
+  display: flex;
+  align-items: center;
+}
+
+/* navbar*/
+.circle {
+  position: absolute;
+  top: 25px;
+  right: 350px;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
+.button {
+  background-color: white;
+  border: none;
+  color: dodgerblue;
+  padding: 12px 16px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.fa-heart-o {
+  color: red;
+}
+.fa-heart {
+  color: red;
+}
+.modal-dialog {
+  max-width: 60%;
+  margin: 2rem auto;
+}
